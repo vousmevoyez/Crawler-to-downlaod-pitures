@@ -24,7 +24,7 @@ for id in range(len(new_url_list)):
 	num_of_pages = re.findall(pp2,url1)
 	special_index = num_of_pages[-1].index('>')
 	n_pages = int(num_of_pages[-1][special_index+1:])
-	# 下载
+	# Download
 	for i in range(n_pages):
 		address = new_url_list[id]
 		if i != 0:
